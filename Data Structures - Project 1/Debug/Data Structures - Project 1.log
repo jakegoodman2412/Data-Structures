@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 1\Data Structures - Project 1\Main.cpp(13,7): warning C4101: 'charStack': unreferenced local variable
+C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 1\Data Structures - Project 1\Main.cpp(14,6): warning C4101: 'digitStack': unreferenced local variable
+  Data Structures - Project 1.vcxproj -> C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 1\Data Structures - Project 1\Debug\Data Structures - Project 1.exe
