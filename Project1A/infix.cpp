@@ -20,7 +20,7 @@ int Evaluator::eval(string token)
 	int number, number2;
 	string digit, digit2,doubleOper;
 	stringstream convert;
-	//using stringstream it will parse the string ,char by char
+	//using stringstream it will parse the string, char by char
 	while (expression >> s) {
 		//if the char is an operator then it will go into this if statement
 		if (isOperator(s)) {
