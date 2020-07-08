@@ -10,7 +10,7 @@ int main() {
 	Evaluator eval;
 	string strLeft;
 	string strRight;
-	string expressionStr("1>2&&2<3");
+	string expressionStr("(4>=4) && 0");
 
 	eval.errorCheck(expressionStr);
 

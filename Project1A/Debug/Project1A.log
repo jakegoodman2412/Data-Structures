@@ -1,2 +1,6 @@
-﻿  Source.cpp
+﻿  infix.cpp
+C:\Users\dyg9v\source\repos\Project1A\Project1A\infix.cpp(221,7): warning C4101: 'charStack': unreferenced local variable
+C:\Users\dyg9v\source\repos\Project1A\Project1A\infix.cpp(222,6): warning C4101: 'digitStack': unreferenced local variable
+C:\Users\dyg9v\source\repos\Project1A\Project1A\infix.cpp(440,14): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\dyg9v\source\repos\Project1A\Project1A\infix.cpp(329): warning C4715: 'Evaluator::calculateC': not all control paths return a value
   Project1A.vcxproj -> C:\Users\dyg9v\source\repos\Project1A\Debug\Project1A.exe

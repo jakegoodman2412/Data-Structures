@@ -315,9 +315,16 @@ bool Evaluator::calculateC(string c)
 			return false;
 		}
 	}
+	else if (c.find("0",0) != string::npos) {
+		return false;
+	
+	}
+	else if (c.find("1", 0) != string::npos) {
+		return true;
+
+	}
 	else {
 		cout << "Expression Result: " << eval.eval(c) << endl;
-		//exit(0);
 	}
 }
 
