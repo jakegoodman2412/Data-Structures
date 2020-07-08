@@ -17,4 +17,5 @@ public:
 	int calculatePre(int num1, char c);
 	bool isOperator(char c);
 	void errorCheck(string s);
+	bool compOpCheck(string c);
 };
