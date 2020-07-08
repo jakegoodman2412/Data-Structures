@@ -10,8 +10,9 @@ int main() {
 	Evaluator eval;
 	string strLeft;
 	string strRight;
-	string expressionStr("(4>=4) && 0");
+	string expressionStr("1  && 1");
 
+	//does an initial error check
 	eval.errorCheck(expressionStr);
 
 	/*This if statement seperates the expression string into two substrings then two
