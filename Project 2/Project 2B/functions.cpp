@@ -1,5 +1,8 @@
 #include "Binary_Tree.h"
 #include <iostream>
+#include <sstream>
+
+//Main insert function that builds out the tree
 void binaryTree::Insert(binaryTreeNode*&node, char morseLetter, string morseCode) {
 
 	//cout << morseCode << "\t";
@@ -24,25 +27,31 @@ void binaryTree::Insert(binaryTreeNode*&node, char morseLetter, string morseCode
 //	cout << "done" << endl;
 }
 
+//feeds the main insert function
 void binaryTree::InsertWrapper(char morseLetter, string morseCode) {
 
 	Insert(root, morseLetter, morseCode);
 }
 
+//just an adhoc print function as needed for validation
 void binaryTree::Print(binaryTreeNode*& node) {
 	cout << root->left->right->morseLetter << endl;
 }
 
 
-
-void binaryTree::encode(const map<char,string> myMap, string str) {
+//passes through the already built out map
+//and then uses the user input to look for map matches
+void binaryTree::encode(const map<char,string> myMap) {
+	string str;
+	cout << "Please enter a word you would like to have encoded!" << endl;
+	cin >> str;
 	string output;
 	cout << "Original Input: " << str << endl;
 	for (int i = 0; i < str.size(); i++) {
 		char c = tolower(str.at(i));
 		if (!isalpha(c)) {
 			cout << "Only alpha characters are allowed!" << endl;
-			exit(1);
+			encode(myMap);
 		}
 		output += myMap.at(c) + " ";
 
@@ -50,12 +59,16 @@ void binaryTree::encode(const map<char,string> myMap, string str) {
 	cout << "Morse Code Output: " << output << endl;
 }
 
+//feeds main search function
 char binaryTree::findWrapper(string target) {
+	//cout << "test 2: " << endl;
 	return(find(root, target));
 }
+//main search function that will be used to decode messages
 char binaryTree::find(binaryTreeNode*& node, string target) {
 
-	
+	//cout << "target test: " << target << endl;
+
 	if (node == NULL) {
 		return NULL;
 	}
@@ -72,5 +85,22 @@ char binaryTree::find(binaryTreeNode*& node, string target) {
 		return(node->morseLetter);
 
 	}
+}
+
+//just takes in already existing BT class object
+//then asks user for message and will use the find functions
+//to decode
+void binaryTree::decode(binaryTree object) {
 	
+	cout << "Please enter in the message you would like to decode" << endl;
+	string input;
+	cin.ignore();
+	getline(cin, input);
+	stringstream ss(input);
+	string singleMorseWord;
+	cout << "Decoded Message: ";
+	while (ss >> singleMorseWord) {
+		cout << object.findWrapper(singleMorseWord);
+	}
+	cout << endl;
 }

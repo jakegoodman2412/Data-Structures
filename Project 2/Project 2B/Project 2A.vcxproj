@@ -24,6 +24,7 @@
     <ProjectGuid>{d514de5d-3176-4ba2-b3b7-d265a7890a01}</ProjectGuid>
     <RootNamespace>Project2A</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Project 2B</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -144,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Binary_Tree.h" />
-    <ClInclude Include="morseCode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

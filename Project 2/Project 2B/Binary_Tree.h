@@ -1,6 +1,7 @@
 #pragma once
-#include "morseCode.h"
-
+#include <map>
+#include <string>
+using namespace std;
 struct binaryTreeNode
 {
 
@@ -19,7 +20,8 @@ public:
 	void InsertWrapper(char morseLetter, string morseCode);
 	char findWrapper(string target);
 	void Print(binaryTreeNode*& node);
-	void encode(const map<char, string> myMap, string str);
+	void encode(const map<char, string> myMap);
+	void decode(binaryTree object);
 	char find(binaryTreeNode*& node, string target);
 private:
 	binaryTreeNode* root;

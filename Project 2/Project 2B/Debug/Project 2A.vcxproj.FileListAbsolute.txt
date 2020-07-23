@@ -1,2 +1,4 @@
 C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 2\Project 2A\Debug\Project 2A.exe
 C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 2\Project 2A\Debug\Project 2A.pdb
+C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 2\Project 2B\Debug\Project 2B.exe
+C:\Users\jg047084\OneDrive - Cerner Corporation\UMKC\Data Structures\Project 2\Project 2B\Debug\Project 2B.pdb
