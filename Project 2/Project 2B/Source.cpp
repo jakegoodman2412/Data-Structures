@@ -1,3 +1,5 @@
+//Jake Goodman & Deivid Guerrero 
+//Project 2B
 #include <iostream>
 #include <fstream>
 #include <vector>
